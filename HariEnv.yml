@@ -1,0 +1,12 @@
+kind: environment
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: HariEnv
+  namespace: hari
+  version: '1.0'
+  tags: []
+spec:
+  variables:
+    - key: domain
+      isSecret: false
+      value: 'https://devrealm3.devportal-aw-us.webmethods-dev.io/portal/rest/v1'

@@ -1,0 +1,12 @@
+kind: assertion
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: HariAssertion
+  namespace: hari
+  version: '1.0'
+  tags: []
+spec:
+  - name: simple-200-ok
+    key: code
+    action: equals
+    value: 200
