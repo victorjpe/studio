@@ -10,3 +10,7 @@ spec:
     key: code
     action: equals
     value: 200
+  - name: responseTime
+    key: __responseTime__
+    value: 3
+    action: lessThan
