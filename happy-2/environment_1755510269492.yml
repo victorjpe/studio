@@ -1,0 +1,12 @@
+kind: environment
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: environment_1755510269492
+  namespace: "404"
+  version: "1.0"
+  tags: []
+spec:
+  variables:
+    - key: water
+      isSecret: true
+      value: test

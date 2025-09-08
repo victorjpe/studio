@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Petstore
+  namespace: '404'
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  policy-sequence: 
+    ref$: 404:Policy:1.0.0
+  api-spec:
+    $path: ./Petstore-spec.yml

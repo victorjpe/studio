@@ -1,0 +1,32 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Multiple-ENV_test
+  namespace: '404'
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $endpoint: "https://petstore.swagger.io/v2"
+  environment:
+    $ref:
+      - hari:HariEnv:1.0
+      - 404:environment_1755510257121:1.0
+      - 404:environment_1755510269492:1.0
+      - 404:environment_1755510314804:1.0
+      - 404:environment_1755510359675:1.0
+  request:
+    - method: POST
+      resource: /pet/2/uploadImage
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        noauth: true
+      payload:
+        formData:
+          - key: file
+            type: file
+            value: '/Users/victorjpe/Downloads/sample.jpg'
+      assertions:
+        $ref: "hari:HariAssertion:1.0"

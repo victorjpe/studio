@@ -1,0 +1,9 @@
+kind: environment
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: environment_1755510359675
+  namespace: '404'
+  version: '1.0'
+  tags: []
+spec:
+  variables: []
