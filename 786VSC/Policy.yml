@@ -1,0 +1,8 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Policy
+  namespace: '404'
+  version: '1.0'
+  tags: []
+spec: {}
