@@ -1,0 +1,43 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test
+  namespace: hari
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $endpoint: https://devrealm3.devportal-aw-us.webmethods-dev.io/portal/rest/v1
+  environment:
+    $ref: hari:HariEnv:1.0
+  request:
+    - method: POST
+      resource: /apis
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        basicAuth:
+          username: "adminuser"
+          password: "Password@123"
+      assertions:
+        $ref: "hari:HariAssertion:1.0"
+      payload:
+        raw:
+          json: ""
+    - method: GET
+      resource: /apis
+      headers:
+        - key: Content-Type
+          value: application/json
+      parameters:
+        - key: search
+          value: done
+        - key: page
+          value: 2
+      auth:
+        basicAuth:
+          username: "adminuser"
+          password: "Password@123"
+      assertions:
+        $ref: "hari:HariAssertion:1.0"
