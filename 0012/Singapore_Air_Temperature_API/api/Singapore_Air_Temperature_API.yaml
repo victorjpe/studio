@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Singapore_Air_Temperature_API
+  version: '1.0'
+  namespace: '0012'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./singapore_air_temperature_api-spec.yml
+  policy-sequence:
+    - $ref: 0012:wm:1.0
