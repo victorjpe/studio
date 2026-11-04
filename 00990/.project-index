@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "73127a04-2e80-4bd3-813f-8362425c6f56:0",
+      "projectId": "lpRF5j8U",
+      "filePath": "00990/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1793786069774,
+      "schemaVersion": 1
+    },
+    {
+      "id": "a0ca5f78-1b9a-481a-b3d7-94b61919555f:0",
+      "projectId": "lpRF5j8U",
+      "filePath": "00990/ioam/api/ioam-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1793786090848,
+      "schemaVersion": 1
+    },
+    {
+      "id": "af515550-7c85-41b5-b838-c1f46994c438:0",
+      "projectId": "lpRF5j8U",
+      "filePath": "00990/ioam/api/ioam.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793786091342,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "ioam",
+      "namespace": "00990",
+      "version": "1.0",
+      "contentHash": "8f7474d9db65f78e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "8705d90d-b37a-425a-99a2-35c3ebb7c325",
+      "projectId": "lpRF5j8U",
+      "sourceNodeId": "af515550-7c85-41b5-b838-c1f46994c438:0",
+      "targetNodeId": "a0ca5f78-1b9a-481a-b3d7-94b61919555f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./ioam-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1793786091343,
+      "lastValidated": 1793786091343
+    }
+  ]
+}
