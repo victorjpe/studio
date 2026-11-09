@@ -1,6 +1,0 @@
-openapi: 3.0.4
-info:
-  title: ioam
-  version: '1.0'
-  description: ''
-paths: {}
